@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+</head>
+<body>
+<style>
+ 
+ td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+</style>
+<div class="content">
+    {% for data in employee_ %}
+        <div class="employee">
+            <p>
+                <b>playerid:</b>{{ data[0] }}
+                <b>nba_player_id:</b>{{ data[1] }}
+                <b>DOB:</b>{{ data[2] }}
+                <b>first_name:</b>{{ data[3] }}
+                <b>last_name:</b>{{ data[4] }}
+                <b>height inches:</b>{{ data[5] }}
+                <b>weight_lbs:</b>{{ data[6] }}
+    
+            </p>
+        </div>
+    {% endfor %}
+</div>  
+</body>
+</html>
+
+
+
+  
+
+
+
+
+
+

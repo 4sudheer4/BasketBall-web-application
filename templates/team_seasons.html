@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+</head>
+<body>
+<style>
+ 
+ td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+</style>
+<div class="content">
+    {% for data in employee_ %}
+        <div class="employee">
+            <p>
+                <b>TeamID:</b>{{ data[0] }}
+                <b>LeagueID:</b>{{ data[1] }}
+                <b>season_id:</b>{{ data[2] }}
+                <b>prefix:</b>{{ data[3] }}
+                <b>nickname:</b>{{ data[4] }}
+                <b>abbrevation:</b>{{ data[5] }}
+                <b>city:</b>{{ data[6] }}
+                <b>state:</b>{{ data[7] }}
+                <b>country:</b>{{ data[8] }}
+                
+            </p>
+        </div>
+    {% endfor %}
+</div>  
+</body>
+</html>
+
+
+
+  
+
+
+
+
+
+

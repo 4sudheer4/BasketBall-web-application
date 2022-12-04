@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+</head>
+<body>
+<style>
+ 
+ td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+</style>
+<div class="content">
+    {% for data in employee_ %}
+        <div class="employee">
+            <p>
+                <b>season_typeID:</b>{{ data[0] }}
+                <b>description:</b>{{ data[1] }}
+                
+    
+            </p>
+        </div>
+    {% endfor %}
+</div>  
+</body>
+</html>
+
+
+
+  
+
+
+
+
+
+
